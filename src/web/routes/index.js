@@ -10,6 +10,7 @@ import CartRoute from './cart';
 import DashboardRoute from './dashboard';
 import ProductRoute from './product';
 import ShopRoute from './shop';
+import SettingsRoute from './settings';
 
 const Routes = [
   HomeRoute,
@@ -19,6 +20,7 @@ const Routes = [
   DashboardRoute,
   ProductRoute,
   ShopRoute,
+  SettingsRoute,
 ];
 
 export default () => (
