@@ -7,14 +7,16 @@ import HomeRoute from './home';
 import AboutUsRoute from './aboutUs';
 import ContactUsRoute from './contactUs';
 import CartRoute from './cart';
-import Dashboard from './dashboard';
+import DashboardRoute from './dashboard';
+import ProductRoute from './product';
 
 const Routes = [
   HomeRoute,
   AboutUsRoute,
   ContactUsRoute,
   CartRoute,
-  Dashboard,
+  DashboardRoute,
+  ProductRoute,
 ];
 
 export default () => (
