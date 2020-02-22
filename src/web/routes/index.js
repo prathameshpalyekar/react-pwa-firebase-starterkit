@@ -1,21 +1,33 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { TEMPLATE } from '../template/index';
+import Config from '../config';
+
 import HomeRoute from './home';
+import AboutUsRoute from './aboutUs';
 
 const Routes = [
   HomeRoute,
+  AboutUsRoute,
 ];
 
 export default () => (
   <Switch>
     {Routes.map((route, index) => {
-      const { component, Container, path, title, exact, showNavbar } = route;
+      const { Component, Container, path, title, exact, templateType, hideFooter = false } = route;
+      const Template = TEMPLATE[templateType || Config.DEFAULT_TEMPLATE];
       return (
         <Route
+          key={index}
           exact={exact}
           path={path}
           render={props => (
-            <Container Layout={component} />
+            <Template pageTitle={title} hideFooter={hideFooter}>
+              {Container ?
+                <Container props={props} Layout={Component} /> :
+                <Component props={props} />
+              }
+            </Template>
           )}
         />
       )
