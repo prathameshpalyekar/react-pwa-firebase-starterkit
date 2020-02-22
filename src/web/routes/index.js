@@ -9,6 +9,7 @@ import ContactUsRoute from './contactUs';
 import CartRoute from './cart';
 import DashboardRoute from './dashboard';
 import ProductRoute from './product';
+import ShopRoute from './shop';
 
 const Routes = [
   HomeRoute,
@@ -17,6 +18,7 @@ const Routes = [
   CartRoute,
   DashboardRoute,
   ProductRoute,
+  ShopRoute,
 ];
 
 export default () => (
