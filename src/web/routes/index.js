@@ -6,11 +6,13 @@ import Config from '../config';
 import HomeRoute from './home';
 import AboutUsRoute from './aboutUs';
 import ContactUsRoute from './contactUs';
+import CartRoute from './cart';
 
 const Routes = [
   HomeRoute,
   AboutUsRoute,
   ContactUsRoute,
+  CartRoute,
 ];
 
 export default () => (
