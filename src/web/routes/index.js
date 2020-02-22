@@ -5,10 +5,12 @@ import Config from '../config';
 
 import HomeRoute from './home';
 import AboutUsRoute from './aboutUs';
+import ContactUsRoute from './contactUs';
 
 const Routes = [
   HomeRoute,
   AboutUsRoute,
+  ContactUsRoute,
 ];
 
 export default () => (
