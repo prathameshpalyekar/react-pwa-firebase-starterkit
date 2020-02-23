@@ -11,6 +11,7 @@ import DashboardRoute from './dashboard';
 import ProductRoute from './product';
 import ShopRoute from './shop';
 import SettingsRoute from './settings';
+import ExampleRoute from './_examples';
 
 const Routes = [
   HomeRoute,
@@ -21,7 +22,7 @@ const Routes = [
   ProductRoute,
   ShopRoute,
   SettingsRoute,
-];
+].concat(ExampleRoute);
 
 export default () => (
   <Switch>
